@@ -31,7 +31,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-macos-arm64
-        path: build/
+        path: Source/Native/build/
 
   build-macos-x86_64:
     runs-on: macos-13
@@ -61,7 +61,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-macos-x86_64
-        path: build/
+        path: Source/Native/build/
 
   build-linux:
     runs-on: ubuntu-22.04
@@ -92,7 +92,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-linux-x86_64
-        path: build/
+        path: Source/Native/build/
 
 
   build-linux-arm64:
@@ -124,7 +124,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-linux-arm64
-        path: build/
+        path: Source/Native/build/
 
   build-linux-arm32:
     runs-on: ubuntu-22.04-arm
@@ -155,7 +155,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-linux-arm
-        path: build/
+        path: Source/Native/build/
 
   build-android-arm:
     runs-on: ubuntu-22.04
@@ -190,7 +190,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-android-arm
-        path: build/
+        path: Source/Native/build/
 
   build-android-arm64:
     runs-on: ubuntu-22.04
@@ -225,7 +225,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-android-arm64
-        path: build/
+        path: Source/Native/build/
 
   build-windows:
     runs-on: windows-latest
@@ -254,4 +254,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: enet-build-windows-${{ matrix.name }}
-        path: build/
+        path: Source/Native/build/
