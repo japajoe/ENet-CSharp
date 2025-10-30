@@ -248,7 +248,7 @@ jobs:
         cd Source/Native
         mkdir build
         cd build
-        cmake -A ${{ matrix.name }} -DENET_SHARED=1 -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DCMAKE_BUILD_TYPE=Release ..
+        cmake -A ${{ matrix.name }} -DENET_SHARED=1 -DCMAKE_BUILD_TYPE=Release ..
         cmake --build . --config Release
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
